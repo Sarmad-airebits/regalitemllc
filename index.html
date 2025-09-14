@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regal Item LLC | Importers & Distributors</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fafafa;
+    }
+
+    header {
+      background: #0d1b2a;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; }
+    header p { margin-top: 0.5rem; font-size: 1.2rem; }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about {
+      text-align: center;
+    }
+    .about h2 {
+      margin-bottom: 1rem;
+      color: #0d1b2a;
+    }
+
+    .services {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-box {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact {
+      background: #e5e5e5;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    .contact h2 { margin-bottom: 1rem; color: #0d1b2a; }
+    .contact p { margin-bottom: 0.5rem; }
+    .contact a {
+      color: #0d1b2a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0d1b2a;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <header>
+    <h1>Regal Item LLC</h1>
+    <p>Trusted Importers & Distributors Worldwide</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      At Regal Item LLC, we specialize in sourcing, importing, and distributing high-quality products across international markets. 
+      Our mission is to connect global suppliers with local businesses through reliable logistics, transparent processes, and a commitment to excellence.
+    </p>
+
+    <div class="services">
+      <div class="service-box">
+        <h3>Global Imports</h3>
+        <p>We import premium goods from leading manufacturers worldwide with an emphasis on quality and compliance.</p>
+      </div>
+      <div class="service-box">
+        <h3>Distribution Network</h3>
+        <p>Our established distribution channels ensure timely delivery to businesses and retailers.</p>
+      </div>
+      <div class="service-box">
+        <h3>Customer Focus</h3>
+        <p>We work closely with partners to deliver tailored solutions that meet evolving market demands.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Contact Name:</strong> Hayyat Ullah Khan</p>
+    <p><strong>Email:</strong> <a href="mailto:thisisabdullahchaudry@gmail.com">thisisabdullahchaudry@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Regal Item LLC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
